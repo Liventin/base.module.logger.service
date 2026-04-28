@@ -17,7 +17,7 @@ class DebugLevel implements Option
 
     public static function getId(): string
     {
-        return 'sample_option_text';
+        return 'logger_level';
     }
 
     public static function getName(): string
