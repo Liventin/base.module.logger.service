@@ -22,29 +22,6 @@ class LogFormatter extends bxLogFormatter
             'object' => $this->formatObject($value, $deep),
             default => 'unknown type : ' . $type,
         };
-//
-//        if (is_string($value)) {
-//            return $value;
-//        }
-//
-//        if (is_object($value)) {
-//            if ($placeholder === 'date' && $value instanceof Date) {
-//                $value = $this->formatDate($value);
-//            } elseif ($placeholder === 'exception' && $value instanceof Throwable) {
-//                $value = $this->formatException($value);
-//            } elseif (method_exists($value, '__toString')) {
-//                $value = (string)$value;
-//            } else {
-//                $value = $this->formatMixed($value);
-//            }
-//        } else {
-//            if ($placeholder === 'trace' && is_array($value)) {
-//                $value = $this->formatTrace($value);
-//            } else {
-//                $value = $this->formatMixed($value);
-//            }
-//        }
-//        return $value;
     }
 
     public function formatArray(array $value, int $deep = 0): string
