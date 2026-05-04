@@ -10,7 +10,6 @@ use Bitrix\Main\Diag\FileLogger as bxFileLogger;
 use Bitrix\Main\Diag\Helper;
 use Bitrix\Main\Type\DateTime;
 use Psr\Log\LogLevel;
-use Bitrix\Main\Diag\LogFormatter;
 
 #[LazyService(serviceCode: 'base.module.logger.service', constructorParams: [
     'fileName' => '',
